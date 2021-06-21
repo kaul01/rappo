@@ -107,55 +107,41 @@
 
 
 
-<section class="section" id="process">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6 text-center">
-                    <div class="section-heading">
-                        <!-- Heading -->
-                        <h2 class="section-title">
-                            Our Working process
-                        </h2>
-
-                        <!-- Subheading -->
-                        <p>
-                            Rapoo can be used to create anything from a small marketing page to a sophisticated website.
-                        </p>
-
+<section class="section_about" id="process">
+    <div class='about_us_row'>
+        <div class="about_us_image">
+            <img src="images/front-page-bottom.jpg" alt="" class="img-fluid blog-img">
+            <h6 style="margin-top:2em;"> PU Binder (50 kgs can)</h6>
+        </div>
+        <div class="about_us_desc">
+            <a href="#">
+                <h3 class="card-title">Pursuing Business Excellence and Sustainability</h3>
+            </a>
+            <p>Star Rubber Chemical is a professional maker of Polyurethane Binder. We can offer Polyurethane Binder about 100 tons per month and our polyurethane binder is manufactured at our state of art facility at Sonepat, Haryana, India.
+            </p>
+            <p>Our key innovation includes India’s first indigenously developed Polyurethane system for footwear industry. Our systems are used for manufacturing variety of footwear including Sandal-Slippers, School shoes, safety shoes, gum boots, soles and others.</p>
+            
+            <button class="about_us_button" data-modal-target="#about_us_modal">Read More</button>
+            <div class="about_us_modal" id='about_us_modal'>
+                <div class="about_us_modal_header">
+                    <div class="about_us_modal_title">
+                        Example Modal
                     </div>
+                    <button data-close-button class="close-button">&times;</button>
                 </div>
-            </div> <!-- / .row -->
-
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-6 col-md-6">
-                    <div class="process-block">
-                        <img src="images/process/process-1.jpg" alt="" class="img-fluid">
-
-                        <h3>Project Research</h3>
-                        <p>Nihil facere delectus eaque aut possimus nobis laudantium reprehenderit.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-md-6">
-                    <div class="process-block">
-                        <img src="images/process/process-2.jpg" alt="" class="img-fluid">
-
-                        <h3>Project demostration</h3>
-                        <p>Nihil facere delectus eaque aut possimus nobis laudantium reprehenderit.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-md-6">
-                    <div class="process-block">
-                        <img src="images/process/process-3.jpg" alt="" class="img-fluid">
-
-                        <h3>Development & delivery</h3>
-                        <p>Nihil facere delectus eaque aut possimus nobis laudantium reprehenderit.</p>
-                    </div>
+                <div class="about_us_modal_body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem nesciunt omnis corrupti ut blanditiis est pariatur eius quis eaque doloremque illum ab mollitia assumenda qui voluptates, veritatis facilis, eligendi inventore ipsa suscipit eveniet, fugit laboriosam a ea? Corrupti molestias ut hic fugiat aspernatur iste soluta, quo odit error, labore ullam temporibus, quam doloribus odio! Dicta fugiat, quae obcaecati, laborum delectus atque dolore non, rem ullam maxime dolor? Hic veritatis nam minus? Labore quod voluptate at sed incidunt optio est similique!
                 </div>
             </div>
+            <div id='about_us_overlay'>
+
+            </div>
+
         </div>
+    </div>
     </section>
 
-
+<!-- 
 <section class="section" id="projects-wrap">
         <div class="overlay"></div>
         <div class="container">
@@ -219,10 +205,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
-<section class="section" id="section-testimonial">
+<!-- <section class="section" id="section-testimonial">
         <div class="container">
            <div class="row align-items-center">
                 <div class="col-lg-4 col-sm-12 col-md-12">
@@ -334,24 +320,26 @@
                 </div>
             </div>
         </div>
-    </section>
- <section class="section" id="blog">
+    </section> -->
+<!-- 
+
+    <section class="section" id="blog">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6 text-center">
                     <div class="section-heading">
-                        <!-- Heading -->
+
                         <h2 class="section-title">
                             Read our latest news
                         </h2>
 
-                        <!-- Subheading -->
+
                         <p>
                             Our duty towards you is to share our experience we're reaching in our work path with you.
                         </p>
                     </div>
                 </div>
-            </div> <!-- / .row -->
+            </div> 
 
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6">
@@ -410,13 +398,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <footer class="section " id="footer">
         <div class="overlay footer-overlay"></div>
         <!--Content -->
         <div class="container">
-            <div class="row justify-content-start">
+            <div class="footer_row">
                 <div class="col-lg-4 col-sm-12">
                     <div class="footer-widget">
                         <!-- Brand -->
@@ -519,6 +507,45 @@
 
     <script src="js/form/contact.js"></script>
     <script src="js/theme.js"></script>
+
+    <script>
+        const openModalButtons = document.querySelectorAll('[data-modal-target]')
+        const closeModalButtons = document.querySelectorAll('[data-close-button]')
+        const overlay = document.getElementById('about_us_overlay')
+
+        openModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modal = document.querySelector(button.dataset.modalTarget)
+            openModal(modal)
+        })
+        })
+
+        overlay.addEventListener('click', () => {
+        const modals = document.querySelectorAll('.about_us_modal.active')
+        modals.forEach(modal => {
+            closeModal(modal)
+        })
+        })
+
+        closeModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modal = button.closest('.about_us_modal')
+            closeModal(modal)
+        })
+        })
+
+        function openModal(modal) {
+        if (modal == null) return
+        modal.classList.add('active')
+        overlay.classList.add('active')
+        }
+
+        function closeModal(modal) {
+        if (modal == null) return
+        modal.classList.remove('active')
+        overlay.classList.remove('active')
+    }
+    </script>
 
   </body>
   </html>
