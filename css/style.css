@@ -170,6 +170,9 @@ img {
 .bg-grey {
   background: #F4F7FC;
 }
+.service_image{
+  width:80%;
+}
 
 /*-------------------
   BUTTONS STYLE
@@ -391,6 +394,7 @@ a:hover, a:focus {
 .about_us_row{
   display:flex;
   justify-content: space-between;
+  padding: 6em 8em;
 }
 .about_us_row_reverse{
   display:flex;
@@ -1511,13 +1515,14 @@ CONTACT PAGE
   padding: 8em 12em;
   display:flex;
   justify-content: space-between;
+  align-items: center;
 }
-.team_image{
+/* .team_image{
   width:20em;
-}
+} */
 .img_owner{
   border-radius: 50%;
-  width:100%;
+  width:20em;
 }
 .team_desc{
   width:50em;
@@ -1552,10 +1557,16 @@ CONTACT PAGE
 @media (max-width: 1200px) {
 
   .team{
-    display: none;
+    flex-wrap: wrap;
+    padding: 8em 3em;
+    justify-content: center;
+    text-align: center;
   }
-  .team_2{
-    display: flex;
+  .team_image{
+    margin-bottom: 2em;
+  }
+  .team_desc{
+    margin-left:0;
   }
 
   .dropdown-item {
@@ -1804,6 +1815,24 @@ CONTACT PAGE
 
 /* Extra Small Devices, Phones */
 @media (max-width: 640px) {
+  .about_us_row{
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 6em 2em;
+  }
+  .about_us_image{
+    margin-bottom:2em;
+  }
+  .footer_row{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .about_us_desc{
+    margin-left:0;
+  }
+
+
+
   .main-navigation {
     margin-top: 40px;
   }
