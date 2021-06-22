@@ -1549,8 +1549,6 @@ CONTACT PAGE
   width:60em;
 }
 
-
-
 /*----------------------------------
     MEDIUM LAYOUT: 1280px
 -----------------------------------*/
@@ -1829,6 +1827,15 @@ CONTACT PAGE
   }
   .about_us_desc{
     margin-left:0;
+  }
+  /* .navbar-brand h3{
+    word-wrap: break-word;
+    width:3em
+  } */
+  .breakTitle{
+    clear: both;
+    display: inline-block;
+    width: 60%;
   }
 
 
