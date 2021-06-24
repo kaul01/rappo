@@ -135,6 +135,13 @@ img {
   vertical-align: middle;
   border-style: none;
 }
+.logo_cointainer{
+  display: flex;
+  align-items: center;
+}
+.star_image_1{
+  height:5.8em;
+}
 
 .img-thumbnail {
   padding: .25rem;
@@ -1813,6 +1820,20 @@ CONTACT PAGE
 
 /* Extra Small Devices, Phones */
 @media (max-width: 640px) {
+  .star_none{
+    display:none;
+  }
+  .logo_cointainer{
+    /* display:none; */
+    /* flex-wrap: wrap; */
+    align-items: center;
+  }
+  /* .star_image_1{
+    height:3em;
+  } */
+  .mobile_small{
+    font-size:21px;
+  }
   .about_us_row{
     flex-wrap: wrap;
     text-align: center;
@@ -1837,6 +1858,7 @@ CONTACT PAGE
     display: inline-block;
     width: 60%;
   }
+  
 
 
 
