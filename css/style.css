@@ -135,6 +135,13 @@ img {
   vertical-align: middle;
   border-style: none;
 }
+.logo_cointainer{
+  display: flex;
+  align-items: center;
+}
+.star_image_1{
+  height:5em;
+}
 
 .img-thumbnail {
   padding: .25rem;
@@ -1837,6 +1844,7 @@ CONTACT PAGE
     display: inline-block;
     width: 60%;
   }
+  
 
 
 
