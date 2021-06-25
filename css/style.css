@@ -180,6 +180,9 @@ img {
 .service_image{
   width:80%;
 }
+.service_image_2{
+  width:70%;
+}
 
 /*-------------------
   BUTTONS STYLE
@@ -407,12 +410,14 @@ a:hover, a:focus {
   display:flex;
   flex-flow: row-reverse;
   justify-content: space-between;
+  padding: 6em 8em;
 }
 .about_us_desc{
   margin-left:2em;
 }
 .about_us_desc_2{
-  margin-right:2em;
+  margin-right:14em;
+  width:50em;
 }
 .about_us_button{
   border-width:1px;
@@ -1839,6 +1844,11 @@ CONTACT PAGE
     text-align: center;
     padding: 6em 2em;
   }
+  .about_us_row_reverse{
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 6em 2em;
+  }
   .about_us_image{
     margin-bottom:2em;
   }
@@ -1848,6 +1858,9 @@ CONTACT PAGE
   }
   .about_us_desc{
     margin-left:0;
+  }
+  .about_us_desc_2{
+    margin-right:0;
   }
   /* .navbar-brand h3{
     word-wrap: break-word;
